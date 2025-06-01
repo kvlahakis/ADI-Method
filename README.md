@@ -147,3 +147,45 @@ end
 T = array2table(err);
 T.Properties.VariableNames = {'Step Size', 'Error', 'Numerical Order'};
 disp(T)
+```
+![figure_0.png](ADI_Method_images/figure_0.png)
+
+```matlab:Code
+figure; clf
+interior_msk = (X ~= 0 & X~= 1) & (Y ~= 0 & Y~= 1);
+surf(X, Y, U_exact); shading interp
+colorbar
+title("Exact Solution", "Interpreter", "latex")
+xlabel("x", "Interpreter", "latex");
+ylabel("y", "Interpreter", "latex");
+zlabel("z", "Interpreter", "latex");
+```
+![figure_1.png](ADI_Method_images/figure_0.png)
+
+```matlab:Code
+figure; clf
+interior_msk = (X ~= 0 & X~= 1) & (Y ~= 0 & Y~= 1);
+surf(X, Y, U_ADI); shading interp
+
+% color map
+cm = hot(256);
+cm = cm(1:end-40, :); % truncate off last few rows
+colormap(cm) % apply truncated map
+caxis([min(U_ADI(:))   max(U_ADI(:))]) % restore the original caxis
+colorbar
+title("Numerical Solution on Finest Mesh", "Interpreter", "latex")
+xlabel("x", "Interpreter", "latex");
+ylabel("y", "Interpreter", "latex");
+zlabel("z", "Interpreter", "latex");
+```
+![figure_2.png](ADI_Method_images/figure_0.png)
+
+```matlab:Code
+figure; clf
+surf(X, Y, abs(U_exact -  U_ADI)); shading interp
+title("Error of Numerical Solution on Finest Mesh", "Interpreter", "latex");
+xlabel("x", "Interpreter", "latex");
+ylabel("y", "Interpreter", "latex");
+zlabel("z", "Interpreter", "latex");
+```
+![figure_3.png](ADI_Method_images/figure_0.png)
