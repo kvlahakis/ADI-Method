@@ -160,7 +160,7 @@ xlabel("x", "Interpreter", "latex");
 ylabel("y", "Interpreter", "latex");
 zlabel("z", "Interpreter", "latex");
 ```
-![figure_1.png](ADI_Method_images/figure_0.png)
+![figure_1.png](ADI_Method_images/figure_1.png)
 
 ```matlab:Code
 figure; clf
@@ -178,7 +178,7 @@ xlabel("x", "Interpreter", "latex");
 ylabel("y", "Interpreter", "latex");
 zlabel("z", "Interpreter", "latex");
 ```
-![figure_2.png](ADI_Method_images/figure_0.png)
+![figure_2.png](ADI_Method_images/figure_2.png)
 
 ```matlab:Code
 figure; clf
@@ -188,4 +188,4 @@ xlabel("x", "Interpreter", "latex");
 ylabel("y", "Interpreter", "latex");
 zlabel("z", "Interpreter", "latex");
 ```
-![figure_3.png](ADI_Method_images/figure_0.png)
+![figure_3.png](ADI_Method_images/figure_3.png)
