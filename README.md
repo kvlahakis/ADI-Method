@@ -82,10 +82,10 @@ Let $v : = Aw$. Since Since the term $\frac{w_{i-1}}{h^2}$ is missing from $v_1$
 We can use this information to generalize equations $[3a]$ and $[3b]$ to the following linear systems:
 
 1.
-$$(I - \frac{1}{2}k A)U^* + G_x^* = \lbrack(I + \frac{1}{2}k A)(U^n)^T + G_y^n\rbrack ^T, \quad \quad \quad [4a]$$
+$$(I - \frac{1}{2}k A)U^* + G_x^* = \lbrack(I + \frac{1}{2}k A)(U^n)^T + (G_y^n)^T\rbrack ^T, \quad \quad \quad [4a]$$
 
 2. 
-$$\lbrack(I - \frac{1}{2}k A)(U^n)^T + G_y^{n+1}\rbrack ^T = (I + \frac{1}{2}k A)U^* + G_x^*, \quad \quad \quad [4b]$$
+$$\lbrack(I - \frac{1}{2}k A)(U^n)^T + (G_y^{n+1})^T\rbrack ^T = (I + \frac{1}{2}k A)U^* + G_x^*, \quad \quad \quad [4b]$$
 
 Where $I, \\: A, \\: G_x, \\: G_y \in \mathbb{R}^{m-1 \times m-1}$
 
